@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 10px 20px;
+        border: 2px solid variables.$menu-border;
+        border-radius: 50px;
+        background-color: variables.$menu-bg;
+        li {
+            margin: 0 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: variables.$font-primary;
+            font-size: variables.$font-size-large;
+            color: variables.$menu-text;
+            padding: 10px 15px;
+            display: inline-block;
+
+            &:hover {
+                color: variables.$menu-hover;
+            }
+        }
+
+        .active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

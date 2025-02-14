@@ -1,0 +1,17 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin responsive-text($size) {
+    font-size: $size;
+
+    @media (max-width: 768px) {
+        font-size: $size * 0.9;
+    }
+
+    @media (max-width: 480px) {
+        font-size: $size * 0.8;
+    }
+}

@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;  
+    height: 300px;
+    object-fit: cover; 
+    border-radius: variables.$border-radius; 
+}

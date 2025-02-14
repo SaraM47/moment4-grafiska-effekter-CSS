@@ -1,0 +1,22 @@
+@use "../abstracts/variables";
+
+body {
+    font-family: variables.$font-primary;
+    font-size: variables.$font-size-base;
+    color: variables.$text-color;
+    line-height: 1.7;
+}
+
+h1 {
+    font-family: variables.$font-accent;
+    font-size: variables.$font-size-xlarge;
+}
+
+h2 {
+    font-family: variables.$font-accent;
+    font-size: variables.$font-size-large;
+}
+
+p {
+    font-size: variables.$font-size-base;
+}

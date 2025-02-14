@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <script type="module" src="js/app.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="sass.html">SASS</a></li>
+            <li><a href="artworks.html">Konstverk</a></li>
+            <li><a href="#">Tidskrifter</a></li>
+            <li><a href="#">Bakgrundsbilder</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Utvärdering av mitt arbete med SASS</h1>
+            <p>SASS (Syntactically Awesome Stylesheets) har varit ett kraftfullt verktyg under utvecklingen av denna webbplats. Nedan beskriver jag mina erfarenheter av att arbeta med SASS.</p>
+        </section>
+
+        <section>
+            <h2>Fördelar med SASS</h2>
+            <ul>
+                <li>Med <strong>variabler</strong> fanns möjligheten att lagra färger, typsnitt och andra återanvändbara värden gör CSS-koden mer underhållsvänlig.</li>
+                <li>Genom <strong>nesting</strong>, kan man skriva renare kod och hålla relaterade stilar ihop.</li>
+                <li><strong>Mixins</strong> underlättar återanvändning av kod och gör det enklare att hantera responsiv design, särskilt på storlekar på fonts.</li>
+                <li><strong>Partials & Moduler</strong> har förmågan att dela CSS-kod i separata filer förbättrar struktur och organisation.</li>
+                <li>Utifrån <strong>color functions:</strong> med användning av `lighten()` och `darken()` ger flexibilitet i design.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Nackdelar med SASS</h2>
+            <ul>
+                <li>Kan vara <strong>komplexitet</strong> för nybörjare kan det vara svårt att förstå alla funktioner och best practices.</li>
+                <li><strong>Behov av kompileringsverktyg</strong> där SASS måste kompileras till vanlig CSS, vilket kräver extra konfiguration.</li>
+                <li><strong>Överanvändning av Nesting</strong> kan förekomma vid djupa nestningar kan göra CSS svårläst och påverka prestandan.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Att komma igång med en CSS-preprocessor</h2>
+            <p>Att börja arbeta med en CSS-preprocessor som SASS var en inlärningskurva. Att arbeta med SASS har varit en intressant upplevelse. Till en början upplevdes rörligt eftersom man bör ha koll på strukturen och uppdelningen av filer och mappar, när man är i själva verket är van vid vanlig CSS. Jag behövde förstå koncept som variabler, mixins och nesting, men när jag väl kom igång märkte jag snabbt hur mycket effektivare det var än vanlig CSS. Det underlättar sedan processen efter man läste igenom material och teorin från första början.</p>
+            <p>Att använda Parcel för att kompilera SASS till CSS ledde till en smidig process, och det hjälpte att organisera CSS-koden bättre genom att använda "partials och en god filstruktur".</p>
+        </section>
+    </main>
+
+</body>
+
+</html>

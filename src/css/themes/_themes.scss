@@ -1,0 +1,45 @@
+@use "../abstracts/variables";
+
+$lightTheme: true;  // Light theme (standard) 
+$darkTheme: false;  // Dark theme (when it's active)
+
+
+@media (prefers-color-scheme: dark) {
+    @if $darkTheme {
+        body {
+            background: 
+                variables.$gradient-background, 
+                variables.$background-pattern,  
+                linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                variables.$dark-bg;  // Dark background far back so it doesn't replace the gradient
+
+            color: variables.$dark-text;
+        }
+
+        main, section {
+            background: darken(variables.$dark-content-bg, 10%);
+        }
+
+        h1, h2 {
+            background: darken(variables.$dark-heading-bg, 5%);
+            color: lighten(variables.$dark-text, 15%);
+        }
+
+        p, ul { 
+            color: variables.$dark-text;
+        }
+
+        nav {
+            background: darken(variables.$menu-bg-dark, 10%);
+            border: 2px solid darken(variables.$menu-border-dark, 10%);
+        }
+
+        nav a {
+            color: lighten(variables.$menu-text-dark, 15%);
+            &:hover {
+                color: lighten(variables.$menu-hover-dark, 15%);
+            }
+        }
+    }
+}

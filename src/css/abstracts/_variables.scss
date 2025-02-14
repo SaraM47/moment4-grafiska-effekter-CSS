@@ -1,0 +1,58 @@
+// Primary colors from color palette
+$primary-color: #ff99cc;  
+$secondary-color: #9999ff; 
+$text-color: #333;
+$menu-text-color: #000000;
+
+// Typography
+$font-primary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$font-accent: 'Trebuchet MS', Arial, sans-serif;
+
+// Font sizes
+$font-size-base: 1.2rem;
+$font-size-large: 1.5rem;   
+$font-size-xlarge: 2rem;
+
+// Gradient background 
+$gradient-background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%) no-repeat;
+
+// White grid pattern 
+$background-pattern: 
+  linear-gradient(transparent 19px, rgba(255, 255, 255, 0.2) 1px), 
+  linear-gradient(90deg, transparent 19px, rgba(255, 255, 255, 0.2) 1px);
+  
+$background-size: 20px 20px; // Grid size
+
+// Darker versions for menu
+$menu-bg: darken($primary-color, 10%);  
+$menu-border: darken($primary-color, 20%); 
+$menu-text: $menu-text-color;
+$menu-hover: lighten($secondary-color, 10%);
+
+// Styling for main sections for the whole website 
+$content-bg: #ffffff;  
+$heading-bg: lighten($secondary-color, 5%);
+$border-radius: 20px;
+
+// Light theme  (standard)
+$lightTheme: true;
+
+// Dark theme 
+$darkTheme: false;
+$dark-bg: #2a0730;
+$dark-text: #f1e1ff;
+$dark-content-bg: darken($secondary-color, 30%);
+$dark-heading-bg: darken($secondary-color, 20%);
+
+// Dark theme for the menu 
+$menu-bg-dark: darken($primary-color, 30%);
+$menu-text-dark: #f1e1ff;
+$menu-border-dark: darken($primary-color, 40%);
+$menu-hover-dark: lighten($secondary-color, 20%);
+
+// Button colors
+$button-bg: $menu-bg; 
+$button-text: $menu-text;
+$button-border: $menu-border;
+$button-hover-bg: $menu-hover;
+$button-hover-text: #fff;

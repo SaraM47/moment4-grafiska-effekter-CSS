@@ -1,0 +1,28 @@
+@use "../abstracts/variables";
+
+body {
+    background: 
+        variables.$gradient-background, 
+        variables.$background-pattern,  
+        linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+        
+
+    background-size: 
+        100% auto,  
+        variables.$background-size,  
+        variables.$background-size,  
+        variables.$background-size;  
+
+    background-position: 
+        0 0,  
+        0 0,  
+        0 0,  
+        0 0;  
+
+    background-repeat: no-repeat, repeat, repeat, repeat; 
+
+    background-blend-mode: overlay; 
+
+    min-height: 100vh;
+}
