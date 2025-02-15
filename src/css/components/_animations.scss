@@ -88,3 +88,15 @@
   .slider-container:hover .slider {
     animation-play-state: paused;
   }
+
+  // 6. Rotating star
+  @keyframes rotate-star {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .rotating-star {
+    width: 10ch;
+    height: auto;
+    animation: rotate-star 3s linear infinite;
+  }
