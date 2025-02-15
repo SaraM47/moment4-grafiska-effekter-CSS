@@ -62,3 +62,31 @@
     color: white;
     font-size: 2rem;
   }
+
+  // **Infinite Slider with play och pause-button**
+.slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 900%;  // 9 images x 100%
+    animation: slide 18s infinite linear;
+  }
+  
+  .slider img {
+    width:8%;  // 100% / 9 images
+    max-height: 200px;
+    object-fit: contain;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  // **Pause animation on hover**
+  .slider-container:hover .slider {
+    animation-play-state: paused;
+  }
