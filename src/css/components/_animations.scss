@@ -1,4 +1,4 @@
-// **1. Glow text**
+// 1. Glow text
 @keyframes glowing-text {
   0% { text-shadow: 0 0 5px #ff0000; }
   50% { text-shadow: 0 0 20px #00ff00; }
@@ -10,7 +10,7 @@
   animation: glowing-text 2s infinite alternate;
 }
 
-// **2. Moving ball**
+// 2. Moving ball
 @keyframes move-ball {
   0% { transform: translateX(0); }
   50% { transform: translateX(300px) rotate(180deg); }
@@ -23,12 +23,10 @@
   background-color: #672fff;
   border-radius: 50%;
   position: relative;
-  animation: move-ball 4s infinite linear;
+  animation: move-ball 2s infinite linear;
 }
 
-
-
-// **3. Button-hover effect**
+// 3. Button-hover effect
 .animated-button {
     background: linear-gradient(45deg, #4734db, #806dfa, #7629b9);
     color: white;
@@ -48,7 +46,7 @@
     }
 }
 
-// **4. Parallax-effect**
+// 4. Parallax-effect
 .parallax {
     background-image: url('../images/parallax-bg.jpg');
     background-attachment: fixed;
@@ -63,7 +61,7 @@
     font-size: 2rem;
   }
 
-  // **Infinite Slider with play och pause-button**
+  // 5.Infinite slider with play and pause-button
 .slider-container {
     position: relative;
     overflow: hidden;
@@ -86,7 +84,7 @@
     100% { transform: translateX(-100%); }
   }
   
-  // **Pause animation on hover**
+  // Pause animation on hover
   .slider-container:hover .slider {
     animation-play-state: paused;
   }
