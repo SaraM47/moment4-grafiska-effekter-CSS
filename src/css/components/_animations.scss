@@ -1,0 +1,64 @@
+// **1. Glow text**
+@keyframes glowing-text {
+  0% { text-shadow: 0 0 5px #ff0000; }
+  50% { text-shadow: 0 0 20px #00ff00; }
+  100% { text-shadow: 0 0 5px #0000ff; }
+}
+
+.glow-text {
+  font-size: 2rem;
+  animation: glowing-text 2s infinite alternate;
+}
+
+// **2. Moving ball**
+@keyframes move-ball {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(300px) rotate(180deg); }
+  100% { transform: translateX(0); }
+}
+
+.moving-ball {
+  width: 50px;
+  height: 50px;
+  background-color: #672fff;
+  border-radius: 50%;
+  position: relative;
+  animation: move-ball 4s infinite linear;
+}
+
+
+
+// **3. Button-hover effect**
+.animated-button {
+    background: linear-gradient(45deg, #4734db, #806dfa, #7629b9);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  
+    &:hover {
+      animation: pulse 0.6s ease-in-out;
+      background: linear-gradient(45deg, #2980b9, #6dd5fa, #3498db);
+      transform: scale(1.1) rotate(-3deg);
+    }
+}
+
+// **4. Parallax-effect**
+.parallax {
+    background-image: url('../images/parallax-bg.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
